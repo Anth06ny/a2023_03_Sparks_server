@@ -21,7 +21,6 @@ public class MyRestController {
     @GetMapping("/test")
     public String testMethode() {
         System.out.println("/test");
-
         return "<b>HelloWorld</b>";
     }
 
