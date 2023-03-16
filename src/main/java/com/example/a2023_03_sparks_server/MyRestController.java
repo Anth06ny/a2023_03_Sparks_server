@@ -11,6 +11,9 @@ public class MyRestController {
     @GetMapping("/max")
     public int max(int p1, int p2) {
         System.out.println("/max : p1=" + p1 + " p2=" + p2);
+        if(p1 == 0) {
+            return -1;
+        }
         return Math.max(p1,p2);
     }
 
